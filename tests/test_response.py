@@ -3,7 +3,7 @@ from app import app
 
 
 def test_success_prediction():
-    endpoint = '/v1/iris/predict'
+    endpoint = '/v1/elomia/predict'
     body = {"data": {"text":['The argument was about her ex-friend I tried to take up for her but she just started cursing at me. I think she reacted this way because she also said you and my ex bsf can be friends then I tried helping her taking up for her and I think she just went mad we argued on discord a very bad app for people we argued in front of 100 people. I feel sad and frustrated about this situation.',
  " I wanted to do my nails because just like 39 minutes ago I wanted to do my nails but I couldn't do it because I started crying and going all manic. I have no hobbies because it makes me feel better about my fat ass fingers. No, I don't like to do any hobbies.",
  'I am upset. I have been feeling upset.  It is not fair I think.',
