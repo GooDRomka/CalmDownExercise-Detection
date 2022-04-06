@@ -10,7 +10,7 @@ app = FastAPI(title="CalmDownExercise Detection", description="API for Elomia ml
 
 @app.on_event('startup')
 async def load_model():
-    clf.model = load('models/ml/smodel_gb_et_rf_lr.mdl')
+    clf.model = load('models/ml/model_gb_et_rf_lr.mdl')
 
 
 app.include_router(app_home)
