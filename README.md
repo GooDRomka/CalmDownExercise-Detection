@@ -25,9 +25,15 @@ http://127.0.0.1/docs
 
 
 ### 5. Try out the post /predict method
+body format is:
 ```
-curl -X POST "http://127.0.0.1/v1/elomia/predict" -H\
- "accept: application/json"\
- -H "Content-Type: application/json"\
- -d "{\"data\":[[4.8,3,1.4,0.3],[2,1,3.2,1.1]]}"
+{"data":
+        {"text":
+            List[str]
+        }
+}
+```
+Try to run via python library request:
+```
+python request.py
 ```

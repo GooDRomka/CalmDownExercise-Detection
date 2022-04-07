@@ -14,6 +14,6 @@ app_elomia_predict_v1 = APIRouter()
 async def get_prediction(data: Elomia):
     X_token = feature_create(pd.DataFrame.from_dict(data.data))
     prediction = clf.model.predict(X_token).tolist()
-    print("model give prediction:\n\n", prediction)
+
     return {"prediction": prediction}
 
